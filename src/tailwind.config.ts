@@ -1,13 +1,16 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  darkMode: ["class"],
+import type { Config } from "tailwindcss"
+import tailwindcssAnimate from "tailwindcss-animate"
+
+const config: Config = {
+  darkMode: "class",
   content: [
-    "./pages/**/*.{ts,tsx}",
-    "./components/**/*.{ts,tsx}",
-    "./app/**/*.{ts,tsx}",
-    "./src/**/*.{ts,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+    "./app/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx}",
     "*.{js,ts,jsx,tsx,mdx}",
   ],
+  prefix: "",
   theme: {
     container: {
       center: true,
@@ -24,24 +27,16 @@ module.exports = {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#FF5E5B", // Vibrant coral
-          foreground: "#ffffff",
+          DEFAULT: "hsl(var(--primary))",
+          foreground: "hsl(var(--primary-foreground))",
         },
         secondary: {
-          DEFAULT: "#39A0ED", // Bright blue
-          foreground: "#ffffff",
+          DEFAULT: "hsl(var(--secondary))",
+          foreground: "hsl(var(--secondary-foreground))",
         },
         accent: {
-          DEFAULT: "#8F3985", // Rich purple
-          foreground: "#ffffff",
-        },
-        highlight: {
-          DEFAULT: "#FFD166", // Vibrant yellow
-          foreground: "#000000",
-        },
-        success: {
-          DEFAULT: "#06D6A0", // Mint green
-          foreground: "#ffffff",
+          DEFAULT: "hsl(var(--accent))",
+          foreground: "hsl(var(--accent-foreground))",
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
@@ -59,6 +54,18 @@ module.exports = {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",
         },
+        highlight: {
+          DEFAULT: "#FFD166", // Vibrant yellow
+          foreground: "#000000",
+        },
+        success: {
+          DEFAULT: "#06D6A0", // Mint green
+          foreground: "#ffffff",
+        },
+        neutral: {
+          200: "#e5e7eb", // Light gray
+          800: "#1f2937", // Dark gray
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -67,20 +74,20 @@ module.exports = {
       },
       keyframes: {
         "accordion-down": {
-          from: { height: 0 },
+          from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
           from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: 0 },
+          to: { height: "0" },
         },
         float: {
           "0%, 100%": { transform: "translateY(0)" },
           "50%": { transform: "translateY(-10px)" },
         },
         "pulse-soft": {
-          "0%, 100%": { opacity: 1 },
-          "50%": { opacity: 0.8 },
+          "0%, 100%": { opacity: "1" },
+          "50%": { opacity: "0.8" },
         },
         "gradient-shift": {
           "0%": { backgroundPosition: "0% 50%" },
@@ -103,6 +110,7 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [tailwindcssAnimate],
 }
 
+export default config

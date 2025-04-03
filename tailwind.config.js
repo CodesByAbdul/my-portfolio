@@ -1,6 +1,8 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  darkMode: "class",
+import tailwindcssAnimate from "tailwindcss-animate";
+
+const config = {
+  darkMode: ["class"],
   content: [
     "./pages/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
@@ -102,7 +104,10 @@ module.exports = {
           "linear-gradient(135deg, rgba(255,94,91,0.1) 0%, rgba(143,57,133,0.1) 50%, rgba(57,160,237,0.1) 100%)",
       },
     },
+  plugins: [tailwindcssAnimate],
   },
-  plugins: [require("tailwindcss-animate")],
-}
+  plugins: [tailwindcssAnimate],
+};
+
+export default config;
 

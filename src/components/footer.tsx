@@ -6,10 +6,10 @@ import { Github, Linkedin, Twitter, Instagram } from "lucide-react"
 
 export default function Footer() {
   const socialLinks = [
-    { icon: Github, href: "https://github.com/adigunabdulrahman", color: "#333", name: "GitHub" },
-    { icon: Linkedin, href: "https://linkedin.com/in/abdulrahman-adigun", color: "#0077B5", name: "LinkedIn" },
-    { icon: Twitter, href: "https://twitter.com/adigunabdulrahman", color: "#1DA1F2", name: "X (Twitter)" },
-    { icon: Instagram, href: "https://instagram.com/adigunabdulrahman", color: "#E1306C", name: "Instagram" },
+    { icon: Github, href: "https://github.com/CodesByAbdul", color: "#333", name: "GitHub" },
+    { icon: Linkedin, href: "https://linkedin.com/adigunabdulrahman3/abdulrahman-adigun", color: "#0077B5", name: "LinkedIn" },
+    { icon: Twitter, href: "https://x.com/_afactor", color: "#1DA1F2", name: "X (Twitter)" },
+    { icon: Instagram, href: "https://instagram.com/_afactor", color: "#E1306C", name: "Instagram" },
   ]
 
   return (

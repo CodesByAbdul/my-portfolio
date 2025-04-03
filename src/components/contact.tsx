@@ -5,10 +5,10 @@ import type React from "react"
 import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef, useState } from "react"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Card, CardContent } from "@/components/ui/card"
+import { Button } from "../components/ui/button"
+import { Input } from "../components/ui/input"
+import { Textarea } from "../components/ui/textarea"
+import { Card, CardContent } from "../components/ui/card"
 import { Mail, Phone, MapPin, Send, Loader2 } from "lucide-react"
 import { toast } from "../hooks/use-toast"
 
@@ -69,7 +69,8 @@ export default function Contact() {
       } else {
         throw new Error(data.message || "Something went wrong")
       }
-    } catch (error) {
+    } catch (err) {
+      console.error("Error sending email:", err)
       toast({
         title: "Error",
         description: "Failed to send your message. Please try again later.",
