@@ -21,9 +21,9 @@ export default function Projects() {
       id: 1,
       title: "E-Commerce Dashboard",
       description: "A responsive dashboard for e-commerce analytics with real-time data visualization.",
-      image: "/placeholder.svg?height=600&width=800",
+      image: "my-portfolio\public\farm-fresh-homepage.jpg?height=600&width=800",
       tags: ["React", "TypeScript", "Tailwind"],
-      demoLink: "#",
+      demoLink: "https://farm-fresh-ecommerce-site.vercel.app/",
       codeLink: "#",
       category: "Web App",
       color: "#FF5E5B", // primary
