@@ -7,7 +7,7 @@ import { Github, Linkedin, Twitter, Instagram } from "lucide-react"
 export default function Footer() {
   const socialLinks = [
     { icon: Github, href: "https://github.com/CodesByAbdul", color: "#333", name: "GitHub" },
-    { icon: Linkedin, href: "https://linkedin.com/abdulrahman-adigun3", color: "#0077B5", name: "LinkedIn" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/abdulrahman-adigun3", color: "#0077B5", name: "LinkedIn" },
     { icon: Twitter, href: "https://x.com/_afactor", color: "#1DA1F2", name: "X (Twitter)" },
     { icon: Instagram, href: "https://instagram.com/_afactor", color: "#E1306C", name: "Instagram" },
   ]

@@ -63,7 +63,7 @@ export default function About() {
           <motion.div variants={itemVariants} className="relative">
             <div className="w-full h-[400px] relative rounded-2xl overflow-hidden shadow-xl transform transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl">
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 via-transparent to-secondary/20 z-10"></div>
-              <Image src="../../public/mypro-pic.png?height=800&width=600" alt="Your Name" fill className="object-cover" />
+              <Image src="/mypro-pic.png?height=800&width=600" alt="Your Name" fill className="object-cover" />
             </div>
             <motion.div
               className="absolute -bottom-5 -right-5 w-40 h-40 bg-primary/20 rounded-full blur-3xl -z-10"
