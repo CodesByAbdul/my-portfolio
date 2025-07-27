@@ -56,11 +56,11 @@ export default function Projects() {
     {
       id: 4,
       title: "Portfolio Website",
-      description: "A creative portfolio website for a digital artist with interactive galleries.",
-      image: "/placeholder.svg?height=600&width=800",
+      description: "A creative portfolio website for a frontend developer.",
+      image: "/image.png?height=600&width=800",
       tags: ["HTML", "CSS", "JavaScript"],
-      demoLink: "#",
-      codeLink: "#",
+      demoLink: "https://abdulrahmanadigun-portfolio.vercel.app",
+      codeLink: "https://github.com/CodesByAbdul/my-portfolio",
       category: "Web App",
       color: "#FFD166", // highlight
       featured: true,
