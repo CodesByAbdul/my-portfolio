@@ -11,7 +11,6 @@ export default function Home() {
   return (
     <ThemeProvider>
       <main className="min-h-screen bg-background">
-        <Header />
         <Hero />
         <About />
         <Skills />
