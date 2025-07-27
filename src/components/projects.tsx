@@ -24,7 +24,7 @@ export default function Projects() {
       image: "/farm-fresh-homepage.jpg?height=600&width=800",
       tags: ["React", "TypeScript", "Tailwind"],
       demoLink: "https://farm-fresh-ecommerce-site.vercel.app/",
-      codeLink: "#",
+      codeLink: "https://github.com/CodesByAbdul/farm-fresh-ecommerce",
       category: "Web App",
       color: "#FF5E5B", // primary
       featured: true,
@@ -33,10 +33,10 @@ export default function Projects() {
       id: 2,
       title: "Travel Booking Platform",
       description: "A modern travel booking platform with interactive maps and personalized recommendations.",
-      image: "/placeholder.svg?height=600&width=800",
-      tags: ["Next.js", "Node.js", "MongoDB"],
-      demoLink: "#",
-      codeLink: "#",
+      image: "/travelhub.jpg?height=600&width=800",
+      tags: ["React", "Node.js", "Tailwind"],
+      demoLink: "https://https://travelhub-zeta.vercel.app/",
+      codeLink: "https://github.com/CodesByAbdul/travel-ease",
       category: "Full Stack",
       color: "#39A0ED", // secondary
       featured: true,

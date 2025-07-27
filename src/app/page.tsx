@@ -4,12 +4,14 @@ import Skills from "../components/skills"
 import Projects from "../components/projects"
 import Contact from "../components/contact"
 import Footer from "../components/footer"
+import Header from "../components/Header"
 import { ThemeProvider } from "next-themes";
 
 export default function Home() {
   return (
     <ThemeProvider>
       <main className="min-h-screen bg-background">
+        <Header />
         <Hero />
         <About />
         <Skills />

@@ -7,7 +7,7 @@ import Link from "next/link"
 
 export default function Hero() {
   return (
-    <section className="relative h-screen flex flex-col items-center justify-center text-center px-4 overflow-hidden">
+    <section id="home" className="relative h-screen flex flex-col items-center justify-center text-center px-4 overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0 -z-10 bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10 animate-gradient-shift bg-[length:400%_400%]"></div>
 
